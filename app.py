@@ -56,14 +56,31 @@ A=5
 
 # example:assign multiple values to multiple variables
 x,y,z="orange","banana","cherry"
+#printof multiple vsroable can be done using comma in between them.
+
 print(x,y,z)
 # assign same value to ,ultiple variables
 x=y=z="orange"
 print(x,y,z)
+#print the variable are usually dont by putting inside print 
+x="hi"
+print(x)
+# can add multiple variable by assigning the = operator to them
+x="hi"
+y="hello"
+z="world"
+print(x+y+z)
+print(x,y,z)  # this will print in same line with space between them
 
-
-
-
-
-
-
+# global variable can be used inside a function by using the global keyword
+x="hlo"
+def myfun():
+  
+    print("hi"+x)
+    myfun()
+x="hi"
+def myfun1():
+    x="hi"
+    print("hi" +x)
+    myfun1()
+    print("hi"+ x)
